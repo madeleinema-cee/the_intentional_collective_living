@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>explore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- wp:fl-builder/layout -->
+	<style>
+        .site-content {
+            width:100%;
+        }
+        .main-content {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .title{
+            font-family: Radley;
+            font-size: 44px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .sub-title {
+            font-family: HelveticaNeue,serif;
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              color: #000000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+          font-family: ApercuPro,serif;
+            width: 191px;
+          font-size: 16px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.19;
+          letter-spacing: normal;
+          color: #ffffff;
+          border-radius: 35px;
+          border: solid 1.5px #648c1a;
+          background-color: #648c1a;
+            padding: 13px;
+            margin-right: 20px
+        }
+
+        .button:hover {
+            color: white;
+            opacity: 80%
+        }
+
+        .second-part {
+            margin: 100px;
+        }
+        .link{
+            color: black;
+            font-size: 16px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.38;
+        }
+        a {
+            color:black
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+            opacity: 80%;
+        }
+
+        .title-center {
+            padding-bottom: 50px;
+          font-family: Radley;
+          font-size: 44px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .small-title {
+            padding-top: 15px;
+          font-size: 25px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.28;
+          letter-spacing: normal;
+          color: #000000;
+        }
+        .card-content {
+            font-family: HelveticaNeue;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: 0.3px;
+          color: #000000;
+        }
+        .third-part {
+            background-color: #e0e6d5;
+            padding: 5% 10%;
+        }
+        .third-title {
+          font-size: 22px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.45;
+          letter-spacing: normal;
+          color: #000000;
+        }
+        .third-content {
+          font-size: 35px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .number {
+            display: inline-block;
+          width: 54px;
+          height: 54px;
+          border: solid 1px #c9d0bb;
+          background-color: #c9d0bb;
+          border-radius: 50%;
+          font-size: 25px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000;
+          padding-top: 10px;
+            text-align: center;
+        }
+
+        .number-title {
+            display: inline-block;
+          font-size: 18px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.22;
+          letter-spacing: normal;
+          color: #000000;
+            padding-bottom: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .post-part {
+            background-color:#f3eee6;
+            padding:5% 10%;
+        }
+
+        .post-title {
+          font-size: 35px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: #000000;
+            text-align: center;
+        }
+        .post-content {
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: 0.3px;
+              text-align: center;
+              color: #000000;
+            padding: 10px;
+        }
+
+        .card {
+          height: 498px;
+          border-radius: 5px;
+          border: solid 0.5px #7c7c7c;
+          background-color: #faf8f5;
+            padding: 10px;
+        }
+
+        .first-part{
+
+            padding-bottom: 100px;
+        }
+
+        .category {
+            width: 25%;
+            display: inline;
+            height: 24px;
+            border-radius: 3px;
+            border: solid 1px #c6cfda;
+            background-color: #c6cfda;
+            font-size: 12px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            text-align: center;
+            float: left;
+        }
+        .card-text {
+            height: 96px;
+            font-size: large;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .user_img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .user-info {
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .post-time {
+          color: #7c7c7c;
+        }
+
+        .comment-info {
+          padding-right: 25% ;
+        }
+
+        .black-button {
+            width: 76px;
+          height: 24px;
+          border-radius: 12px;
+          border: solid 1px #000000;
+          background-color: #000000;
+            font-size: 12px;
+              color: #ffffff;
+            text-align: center;
+            padding-top: 2px;
+            display: inline-block;
+        }
+
+        .organization {
+            background-color: #f3eee6;
+            margin: 100px 0;
+        }
+
+        .intro {
+            border-radius: 5px;
+            border: solid 1px #7c7c7c;
+            margin-left: 5px ;
+            margin-top: 5px ;
+            width: 300px;
+            height: 290px;
+            padding: 20px;
+        }
+
+        .services{
+          height: 22px;
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .btn-drop {
+            width: 276px;
+            border-radius: 5px;
+            border: solid 1px #f3eee6;
+            background-color: #f3eee6;
+            font-family: HelveticaNeue;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .bg2 {
+          background-color: #e0e6d5;
+        }
+
+        .line {
+            width: 131px;;
+            border-bottom: solid 2px #000000;
+        }
+
+        .fa-quote-left {
+            font-size: 42px;
+            color: #c6cfda;
+
+        }
+
+        .loo-family {
+            margin: 12px 0 32px;
+            font-family: HelveticaNeue;
+            font-size: 25px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.48;
+            letter-spacing: normal;
+            color: #000000;
+            padding: 10px 20px;
+        }
+
+        .customization {
+            height: 32px;
+            margin: 32px 0 24px;
+            font-size: 22px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.45;
+            letter-spacing: normal;
+            color: #000000;
+            padding: 0 20px;
+        }
+
+        .fa-check-circle {
+            font-size: 28px;
+            padding-right: 10px;
+        }
+
+        .items {
+            margin: 0 0 0 16px;
+            font-family: HelveticaNeue;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: 0.3px;
+            color: #000000;
+        }
+
+        .loo {
+            margin: 0 0 0 32px;
+          padding: 32px 24px;
+          border-radius: 8px;
+          background-color: #ffffff;
+        }
+
+        .Callan-Loo {
+            font-size: 25px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .Creative-compassion {
+            font-family: HelveticaNeue;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #7c7c7c;
+        }
+
+        .learnmore {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .question {
+            font-size: 25px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #000000;
+            margin-bottom: 32px;
+        }
+
+        .answer {
+            padding: 20px 0;
+            font-family: HelveticaNeue;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: 0.3px;
+            color: #000000;
+        }
+
+
+
+
+</style>
+
+<div class="container main-content">
+    <div class="row first-part">
+        <div class="col-lg-6">
+            <div class="services">Programs and services</div>
+            <div class="dropdown show">
+                  <a class="btn btn-drop dropdown-toggle" href="#" role="button"
+                     id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Life celebrations ceremony
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Weddings and unions ceremony</a>
+                    <a class="dropdown-item" href="#">Coming of age ceremony</a>
+                    <a class="dropdown-item" href="#">Rising Phoenix Awards</a>
+                  </div>
+            </div>
+            <h1 class="title">
+                "I want to be celebrated, not mourned!"
+            </h1>
+
+	        <p class="sub-title">A well-planned life celebration ceremony can completely change the way
+        we experience the passing of a loved one.</p>
+			<a href="" class="button" target="_self" role="button" rel="noopener noreferrer">
+							Start planning
+					</a>
+			<a class="link" href="" target="_self" role="button" rel="noopener noreferrer">
+                <u>Learn more</u> ↓
+			</a>
+        </div>
+        <div class="col-lg-6">
+            <div class="image">
+                <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+                     itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>        </div>
+        </div>
+    </div>
+    <h2 class="title-center center">
+		Transforming the grieving process for all that’s invovled
+	</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-1-300x225.jpg" alt="logo" itemprop="image" height="225" width="300" title="default" onerror="this.style.display='none'"  />
+            <h2 class="small-title">
+                Plan and Prepare
+            </h2>
+            <p class="card-content">Advance planning is ideal to save your loved ones stress, conflict and money, but good preparation can happen anytime.</p>
+        </div>
+
+        <div class="col-lg-4">
+            <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-1-300x225.jpg" alt="logo" itemprop="image" height="225" width="300" title="default" onerror="this.style.display='none'"  />
+            <h2 class="small-title">
+                Communicate and connect
+            </h2>
+            <p>Having a good plan and a certified celebrant involved makes communication and connection between family members much easier on everyone.</p>
+        </div>
+        <div class="col-lg-4">
+            <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-1-300x225.jpg" alt="logo" itemprop="image" height="225" width="300" title="default" onerror="this.style.display='none'"  />
+            <h2 class="small-title">
+		        Grieve and celebrate
+	        </h2>
+	        <p>Grieving is important, and we'll help you do that while shifting the focus from mourning their loss to celebrating their life.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="organization">
+    <div class="row">
+        <div class="col-lg-6">
+            <div style="padding: 20px 30px">
+                <h2 style="padding-top: 10%; padding-bottom: 10%">
+                   Celebrate a life as a beautiful work of art. We'll guide you every step of the way.
+                </h2>
+
+                <p class="sub-title">Deliver a ceremony that deeply connects participants with the person that passed,
+                    while helping them grieve in a healthy way. We'll help envision and plan a custom life celebration,
+                    put the plan to paper, and communicate it as appropriate. </p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg"
+             alt="default-2" itemprop="image" height="638px" width="100%" title="default-2" onerror="this.style.display='none'"/>
+        </div>
+    </div>
+    <div class="row bg2">
+        <div class="col-lg-6">
+        <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg"
+             alt="default-2" itemprop="image" height="638px" width="100%" title="default-2" onerror="this.style.display='none'"/>
+        </div>
+        <div class="col-lg-6">
+            <div style="padding: 20px 30px">
+                <h2 style="padding-top: 10%; padding-bottom: 10%">
+                   You focus on grieving well and healing, we'll handle the details
+                </h2>
+
+                <p class="sub-title">Our certified celebrants take the lead to deliver the ceremony as
+                    planned with compassion and grace, coordinating with key family and friends as well as
+                    other involved professionals to relieve the stress and ensure the deceased's
+                    intentions and wishes are fulfilled.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="title-center center">See how our custom ceremonies impacted others</div>
+    <div class="center">
+        <div class="number-title line">Loo family</div>
+    </div>
+</div>
+
+<div class="post-part">
+    <div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg"
+             alt="default-2" itemprop="image" height="575px" width="100%" title="default-2" onerror="this.style.display='none'"/>
+            </div>
+            <div class="col-lg-6">
+                <i class="fa fa-quote-left"></i>
+                <div class="loo-family">Dad's passing was hard on all of us, but his decision to plan a
+                    life celebration ceremony ahead of time allowed our family and friends to come
+                    together in a unique way of his own choosing to grieve while celebrating all the
+                    joy he brought us rather then focus on mourning.</div>
+
+                <div class="customization">Loo family’s customizations</div>
+
+                    <div class="items"><i class="fa fa-check-circle"></i>Direct planning with the individual in advance to understand his personal wishes and intentions</div>
+                    <div class="items"><i class="fa fa-check-circle"></i>Including a life celebration plan with estate documents</div>
+                    <div class="items"><i class="fa fa-check-circle"></i>Having an intimate gathering to share stories and memories</div>
+                    <div class="items"><i class="fa fa-check-circle"></i>Thoughtfully prepared pictures, video, and props</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container main-content">
+    <div class="row first-part">
+        <div class="col-lg-6">
+            <h1 class="title">
+                Meet our celebrant
+            </h1>
+
+	        <p class="sub-title">Our celebrants are certified
+                and have been trained to create powerful ceremonies that deliver depth and meaning
+                for the individual, their families, and their communities. Using their compassion,
+                knowledge, perspective, experience and skills, they help you grieve while shifting the
+                focus from mourning their loss to celebrating their life.</p>
+        </div>
+        <div class="col-lg-6">
+            <div class="loo">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+                     itemprop="image" height="184px" width="200px" title="default-2" onerror="this.style.display='none'"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="Callan-Loo">Callan Loo</div>
+                        <div class="Creative-compassion">Creative, compassionate and experienced. Cal is a certified
+                            celebrant, using his ordination to deliver life-changing ceremony.</div>
+                        <a class="learnmore" href="#"><u>Learn more</u> →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="main-content">
+    <div class="title-center center">Your questions answered</div>
+        <div class="question" >
+            <a data-toggle="collapse" href="#QA1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                How much does a custom life celebration ceremony cost?
+            </a>
+        </div>
+
+        <div class="collapse" id="QA1">
+            <div class="answer">
+                Life celebration ceremonies start at $250 and include working with a celebrant
+                to plan, document, communicate, and deliver the ceremony.
+                The actual cost could vary depending on how much customization and travel is required by the celebrant.
+            </div>
+        </div>
+
+        <div class="question" >
+            <a data-toggle="collapse" href="#QA2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Does a life celebration replace a funeral service?
+            </a>
+        </div>
+
+        <div class="collapse" id="QA2">
+            <div class="answer">
+                Possibly, but not necessarily. Life celebrations can
+                sometime replace traditional funerals and sometimes compliment them.
+            </div>
+        </div>
+
+        <div class="question" >
+            <a data-toggle="collapse" href="#QA3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Do you provide this service nation wide?
+            </a>
+        </div>
+
+        <div class="collapse" id="QA3">
+            <div class="answer">
+                Yes, our celebrants are ready and willing to support families wherever
+                they may be. Services provided outside of our SE Michigan/NW
+                Ohio home region will require that clients cover reasonable travel costs.
+            </div>
+        </div>
+
+        <div class="question" >
+            <a data-toggle="collapse" href="#QA4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Are these services “spiritually” or "religiously" oriented?
+            </a>
+        </div>
+
+        <div class="collapse" id="QA4">
+            <div class="answer">
+                They can be, or they can not be, depending on the client. We serve families of all
+                spiritual perspectives or religious faiths and will create and deliver
+                services that honor virtually any respectful and reasonable belief system.
+            </div>
+        </div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- /wp:fl-builder/layout -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
