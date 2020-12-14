@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>explore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- wp:fl-builder/layout -->
+	<style>
+        .site-content {
+            width:100%;
+        }
+        .main-content {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .title{
+            font-family: Radley;
+            font-size: 44px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .button {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: #ffffff;
+            border-radius: 35px;
+            border: solid 1px #648c1a;
+            background-color: #648c1a;
+            padding: 13px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            color: white;
+            background-color: #648c1a;
+            opacity: 80%;
+            border: solid 1px #648c1a;
+        }
+
+        a {
+            color:black
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+            opacity: 80%;
+        }
+
+        .title-center {
+          font-family: Radley;
+          font-size: 44px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .post-part {
+            padding-bottom: 5%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+
+        .first-part{
+            padding-bottom: 100px;
+        }
+
+
+        .services{
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .btn-drop {
+            width: 276px;
+            border-radius: 5px;
+            border: solid 1px #f3eee6;
+            background-color: #f3eee6;
+            font-family: HelveticaNeue;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .items {
+            margin: 0 0 0 16px;
+            font-size: 25px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: 0.3px;
+            color: #000000;
+        }
+
+        .answer {
+            padding: 20px 0;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: 0.3px;
+            color: #000000;
+        }
+
+        .specialpaddingtop {
+            padding-top: 20px;
+        }
+
+        .specialpaddingbottom {
+            padding-bottom: 20px;
+        }
+
+        .belief {
+            background-color:#e0e6d5;
+        }
+
+        .number {
+            display: inline-block;
+            width: 54px;
+            height: 54px;
+            border: solid 2px black;
+            border-radius: 50%;
+            font-size: 25px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            padding-top: 10px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .belief-title {
+            font-size: 35px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.29;
+            letter-spacing: normal;
+            text-align: center;
+            color: #000000;
+            margin: auto;
+            width: 60%;
+        }
+
+        .belief-content {
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #000000;
+            margin: auto;
+            width: 60%;
+        }
+
+        .button2 {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: black;
+            border-radius: 35px;
+            border: solid 1px black;
+            padding: 13px;
+            display: inline-block;
+        }
+
+        .button2:hover {
+            opacity: 80%;
+        }
+
+
+</style>
+
+<script>
+    function replaceIcon(divid, class1, class2) {
+        var element = document.getElementById(divid);
+        if (element.classList.contains(class1)) {
+            element.classList.replace(class1, class2)
+        } else {
+            element.classList.replace(class2, class1)
+        }
+    }
+</script>
+
+<div class="container main-content">
+    <div class="row first-part">
+        <div class="col-lg-6 specialpaddingbottom">
+            <div class="services">Company</div>
+            <div class="dropdown show">
+                  <a class="btn btn-drop dropdown-toggle" href="#" role="button"
+                     id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Manifesto
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/who-we-are/">Who we are</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/ambassadors/">Ambassadors</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/sponsors/">Sponsors</a>
+                  </div>
+            </div>
+            <br>
+            <br>
+            <h1 class="title">
+                Our core values and beliefs: the building blocks of this community
+            </h1>
+
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <div class="image">
+                <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+                     itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>        </div>
+        </div>
+    </div>
+    <h2 class="title-center center">
+		Our core values
+	</h2>
+
+</div>
+
+<div class="post-part">
+    <div>
+        <div class="row">
+            <div class="col-lg-6 specialpaddingtop">
+                <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg"
+             alt="default-2" itemprop="image" height="575px" width="100%" title="default-2" onerror="this.style.display='none'"/>
+            </div>
+            <div class="col-lg-6 specialpaddingtop">
+
+                <div class="items"><a data-toggle="collapse" href="#value1" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                      onclick="replaceIcon('q1', 'fa-chevron-down', 'fa-chevron-up')">1. Safety</a></div>
+                <div class="collapse" id="value1">
+                    <div class="answer">
+                       We offer safe space for individuals and organizations to connect.
+                    </div>
+                </div>
+                <br>
+                <div class="items"><a data-toggle="collapse" href="#value2" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                      onclick="replaceIcon('q1', 'fa-chevron-down', 'fa-chevron-up')">2. Collaboration</a></div>
+                <div class="collapse" id="value2">
+                    <div class="answer">
+                       We offer safe space for individuals and organizations to connect.
+                    </div>
+                </div>
+                <br>
+                <div class="items"><a data-toggle="collapse" href="#value3" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                      onclick="replaceIcon('q1', 'fa-chevron-down', 'fa-chevron-up')">3. Right intention</a></div>
+                <div class="collapse" id="value3">
+                    <div class="answer">
+                       We offer safe space for individuals and organizations to connect.
+                    </div>
+                </div>
+                <br>
+                <div class="items"><a data-toggle="collapse" href="#value4" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                      onclick="replaceIcon('q1', 'fa-chevron-down', 'fa-chevron-up')">4. Respect</a></div>
+                <div class="collapse" id="value4">
+                    <div class="answer">
+                       We offer safe space for individuals and organizations to connect.
+                    </div>
+                </div>
+                <br>
+                <div class="items"><a data-toggle="collapse" href="#value5" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                      onclick="replaceIcon('q1', 'fa-chevron-down', 'fa-chevron-up')">5. Integrity</a></div>
+                <div class="collapse" id="value5">
+                    <div class="answer">
+                       We offer safe space for individuals and organizations to connect.
+                    </div>
+                </div>
+                <br>
+                <div class="items"><a data-toggle="collapse" href="#value6" role="button" aria-expanded="false" aria-controls="collapseExample"
+                                      onclick="replaceIcon('q1', 'fa-chevron-down', 'fa-chevron-up')">6. Fluidity</a></div>
+                <div class="collapse" id="value6">
+                    <div class="answer">
+                       We offer safe space for individuals and organizations to connect.
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="belief center">
+    <br>
+    <br>
+    <h2 class="title-center center">What we believe in
+    </h2>
+    <br>
+    <br>
+    <div class="center"><div class="number">1</div></div>
+    <br>
+    <br>
+    <div class="belief-title">With hope and inspiration, all things are possible.</div>
+    <br>
+    <div class="belief-content">“Hope is being able to see that there is light despite all of the darkness.”– Desmond Tutu
+"There's no need to be perfect to inspire others.  Let people get inspired by how you deal with your imperfections." - Kurt Tasche</div>
+    <br>
+    <div class="belief-content">We believe that hope can lead to inspiration, inspiration can lead to inspired action,
+        inspired action can lead to personal evolution, and that enough personal evolution can lead to societal revolution.</div>
+    <br>
+    <br>
+    <div class="center"><div class="number">2</div></div>
+    <br>
+    <br>
+    <div class="belief-title">Life transitions are catalysts for personal growth.</div>
+    <br>
+    <div class="belief-content">It seems we grow more during times of change because change shakes us out of our
+        comfort zones and forces us to adapt. Major life transitions can shake us to our core and cause us to
+        grow and evolve in character-defining ways. The bad news is we all go through them. The good news is
+        that we're all stronger than we know and we will find that strength when tested. We believe
+        that if we keep the light of hope burning the fire of change will help us become more of who we're meant to be.</div>
+    <br>
+    <br>
+    <div class="center"><div class="number">3</div></div>
+    <br>
+    <br>
+    <div class="belief-title">New ways, new systems, and new leaders are needed.</div>
+    <br>
+    <div class="belief-content">Society as we know it is going through massive shifts right before our eyes
+        - old ways and old systems are breaking down, and some of them can't and maybe shouldn't be fixed.
+        New ways and new systems that are built on collaboration, compassion, fairness, generosity, kindness,
+        and love must arise to replace them, and we need to identify and rally around leaders that embody those
+        qualities. We believe that everyone has important roles to play and that one of ours is to provide
+        a safe place offering people a place to belong and to contribute to something better.</div>
+    <br>
+    <br>
+    <div class="center"><div class="number">4</div></div>
+    <br>
+    <br>
+    <div class="belief-title">Real. Connected. Community. The old way can become a new way, leading to something better.</div>
+    <br>
+    <div class="belief-content">What passes for "community" today often seems to pale in comparison with what "used to be".
+There's a knowing inside us that we've lost a connection with those around us and maybe even with ourselves;
+        that we've traded meaningful relationships with ourselves and others for busy-ness, for things, for distractions,
+        for devices, and for shallow connections online. We believe that
+compassion, generosity, kindness and meaningful connection are fundamental to our nature and that if we provide
+        a better community then people will choose to join it when they're ready.</div>
+    <br>
+    <br>
+
+    <br>
+
+
+</div>
+
+
+
+<div class="post-part">
+    <div class="center">
+        <br>
+        <br>
+        <h2 class="title-center center">To ensure a safe and supportive environment for all of our community members,
+            we ask you to uphold these values and beliefs in your interactions with others in our community.</h2>
+        <br>
+        <br>
+        <a href="" class="button" target="_self" role="button" rel="noopener noreferrer">
+            Find your community with us
+        </a>
+
+        <a href="" class="button2" target="_self" role="button" rel="noopener noreferrer">
+            Read our Code of Conduct
+        </a>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- /wp:fl-builder/layout -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
