@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>explore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- wp:fl-builder/layout -->
+	<style>
+        .site-content {
+            width:100%;
+        }
+        .main-content {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 5%;
+
+        }
+        .title{
+            font-family: Radley;
+            font-size: xx-large;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .sub-title {
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              color: #000000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: #ffffff;
+            border-radius: 35px;
+            border: solid 1.5px #648c1a;
+            background-color: #648c1a;
+            padding: 13px;
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .button2 {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: black;
+            border-radius: 35px;
+            border: solid 1px #2c2c2c;
+            padding: 13px;
+            display: inline;
+            margin-right: 20px;
+
+        }
+
+        .button:hover {
+            color: white;
+            background-color: #648c1a;
+            opacity: 80%;
+            border: solid 1.5px #648c1a;
+        }
+
+
+        .link{
+            color: black;
+            font-size: 16px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.38;
+            display: inline;
+        }
+
+        a {
+            color:black
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+            opacity: 80%;
+        }
+
+        .title-center {
+            padding-bottom: 50px;
+          font-family: Radley;
+          font-size: xx-large;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .card {
+          border-radius: 5px;
+          border: solid 0.5px #7c7c7c;
+          background-color: #faf8f5;
+            padding: 20px;
+        }
+
+        .category {
+            display: inline;
+            border-radius: 3px;
+            border: solid 1px #c6cfda;
+            background-color: #c6cfda;
+            font-size: 12px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            text-align: center;
+            float: left;
+            margin-right: 3px;
+            padding: 5px;
+        }
+
+        .category2 {
+            display: inline;
+            border-radius: 3px;
+            border: solid 1px #e0e6d5;
+            background-color: #e0e6d5;
+            font-size: 12px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #648c1a;
+            text-align: center;
+            float: left;
+            padding: 5px;
+        }
+
+        .card-text {
+            font-size: large;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .user_img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .user-info {
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        .number-title {
+            display: inline-block;
+          font-size: x-large;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: #000000;
+            padding-bottom: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+
+        .first-part{
+
+            padding-bottom: 100px;
+        }
+
+
+        .services{
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .btn-drop {
+            width: 276px;
+            border-radius: 5px;
+            border: solid 1px #f3eee6;
+            background-color: #f3eee6;
+            font-family: HelveticaNeue;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+
+        .forum-card {
+            border-radius: 5px;
+            border: solid 0.5px #7c7c7c;
+            background-color: #faf8f5;
+            padding: 20px;
+
+        }
+        .organization {
+            background-color: #e0e6d5;
+            margin: 100px 0;
+        }
+
+        .event-people {
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: #000000;
+            display: inline;
+        }
+
+</style>
+
+
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-lg-6 specialpaddingbottom">
+            <div class="services">Topics</div>
+            <div class="dropdown show">
+                  <a class="btn btn-drop dropdown-toggle" href="#" role="button"
+                     id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Grieving
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/topics-coming_of_age/">Coming of age</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/abuse/ ">Abuse</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/addiction/ ">Addiction</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/divorce_or_uncoupling/ ">Divorce or Uncoupling</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/emerging_self_awareness/ ">Emerging self-awareness</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/aging/ ">Aging</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/health_crisis/ ">Health crisis</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/homelessness/">Homelessness</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/human_trafficking/">Human trafficking</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/joining_community/ ">Joining community</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/job_or_career_change/ ">Job or career change</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/marriage_or_union/ ">Marriage or union</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/military_life_transitions/">Military life transitions</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/parenthood/">Parenthood</a>
+                    <a class="dropdown-item" href="http://dev-the-ilc.org/a_new_business/ ">A new business</a>
+
+                  </div>
+            </div>
+            <br>
+            <h1 class="title">
+                [Placeholder]
+            </h1>
+
+	        <p class="sub-title">We’ve gathered personal stories, intimate
+                conversations and helpful resources from our community to help you [Placeholder].</p>
+
+            <br>
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <div class="image">
+                <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+                     itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="title-center">
+		        First-hand stories
+	        </h2>
+        </div>
+        <div class="col-lg-6" style="text-align: right">
+            <div class="button2">See more</div>
+        </div>
+    </div>
+
+    <div class="post-part">
+        <br>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+            <div class="card-head  mb-2">
+                    <a href="#" class="category">Grieving</a>
+                    <div style="float: right;">
+                        <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                        <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                    </div>
+                </div>
+
+
+            <p class="card-text">I’ve been sober for 9 months now and it all began when I shifted my thinking</p>
+             <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+         itemprop="image" title="default-2" class="card-img-top mb-2" onerror="this.style.display='none'"/>
+            <a class="link" href="#"><u>Watch video</u> →</a>
+        </div>
+                <br>
+                <div class="user-section ml-4">
+                   <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="user-img"
+                        class="user_img mr-2" style="float:left;" onerror="this.style.display='none'"/>
+                   <div class="user-info" >
+                       <a href="#" class="user-name">Abel</a>
+                       <p class="comment-info" style="float: right">300 views 20 Reactions</p>
+                       <div class="post-time">2 hrs</div>
+                   </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-lg-4">
+                    <div class="card">
+                <div class="card-head  mb-2">
+                        <a href="#" class="category">Grieving</a>
+                        <div style="float: right;">
+                            <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                            <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+
+
+                <p class="card-text">I’ve been sober for 9 months now and it all began when I shifted my thinking</p>
+                 <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+             itemprop="image" title="default-2" class="card-img-top mb-2" onerror="this.style.display='none'"/>
+                <a class="link" href="#"><u>Watch video</u> →</a>
+            </div>
+                    <br>
+                    <div class="user-section ml-4">
+                       <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="user-img"
+                            class="user_img mr-2" style="float:left;" onerror="this.style.display='none'"/>
+                       <div class="user-info" >
+                           <a href="#" class="user-name">Abel</a>
+                           <p class="comment-info" style="float: right">300 views 20 Reactions</p>
+                           <div class="post-time">2 hrs</div>
+                       </div>
+                    </div>
+                    <br>
+                </div>
+            <div class="col-lg-4">
+                    <div class="card">
+                <div class="card-head  mb-2">
+                        <a href="#" class="category">Grieving</a>
+                        <div style="float: right;">
+                            <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                            <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+
+
+                <p class="card-text">I’ve been sober for 9 months now and it all began when I shifted my thinking</p>
+                 <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
+             itemprop="image" title="default-2" class="card-img-top mb-2" onerror="this.style.display='none'"/>
+                <a class="link" href="#"><u>Watch video</u> →</a>
+            </div>
+                    <br>
+                    <div class="user-section ml-4">
+                       <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="user-img"
+                            class="user_img mr-2" style="float:left;" onerror="this.style.display='none'"/>
+                       <div class="user-info" >
+                           <a href="#" class="user-name">Abel</a>
+                           <p class="comment-info" style="float: right">300 views 20 Reactions</p>
+                           <div class="post-time">2 hrs</div>
+                       </div>
+                    </div>
+                    <br>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="title-center">
+		        Community conversations
+	        </h2>
+        </div>
+        <div class="col-lg-6" style="text-align: right">
+            <div class="button2">See more</div>
+        </div>
+    </div>
+    <div class="post-part">
+        <br>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="forum-card">
+                    <div class="card-head  mb-2">
+                        <a href="#" class="category">Grieving</a>
+                        <a href="#" class="category2">Rephrase this</a>
+                        <div style="float: right;">
+                            <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                            <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="card-text">I’ve been stuck in this really negative narrative.</p>
+                    <p class="forum-card-content">Can you help me rephrase this narrative: “I
+                        drive people away because my boyfriend is now distancing himself physically and emotionally”?</p>
+                </div>
+               <br>
+               <div class="user-section ml-4">
+               <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="user-img"
+                    class="user_img mr-2" style="float:left;" onerror="this.style.display='none'"/>
+                   <div class="user-info" >
+                       <a href="#" class="user-name">Abel</a>
+                       <p class="comment-info" style="float: right">300 views 20 Reactions</p>
+                       <div class="post-time">2 hrs</div>
+                   </div>
+                   <br>
+               </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="forum-card">
+                    <div class="card-head  mb-2">
+                        <a href="#" class="category">Grieving</a>
+                        <a href="#" class="category2">Rephrase this</a>
+                        <div style="float: right;">
+                            <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                            <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="card-text">I’ve been stuck in this really negative narrative.</p>
+                    <p class="forum-card-content">Can you help me rephrase this narrative: “I
+                        drive people away because my boyfriend is now distancing himself physically and emotionally”?</p>
+                </div>
+               <br>
+               <div class="user-section ml-4">
+               <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="user-img"
+                    class="user_img mr-2" style="float:left;" onerror="this.style.display='none'"/>
+                   <div class="user-info" >
+                       <a href="#" class="user-name">Abel</a>
+                       <p class="comment-info" style="float: right">300 views 20 Reactions</p>
+                       <div class="post-time">2 hrs</div>
+                   </div>
+                   <br>
+               </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="forum-card">
+                    <div class="card-head  mb-2">
+                        <a href="#" class="category">Grieving</a>
+                        <a href="#" class="category2">Rephrase this</a>
+                        <div style="float: right;">
+                            <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                            <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="card-text">I’ve been stuck in this really negative narrative.</p>
+                    <p class="forum-card-content">Can you help me rephrase this narrative: “I
+                        drive people away because my boyfriend is now distancing himself physically and emotionally”?</p>
+                </div>
+               <br>
+               <div class="user-section ml-4">
+               <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="user-img"
+                    class="user_img mr-2" style="float:left;" onerror="this.style.display='none'"/>
+                   <div class="user-info" >
+                       <a href="#" class="user-name">Abel</a>
+                       <p class="comment-info" style="float: right">300 views 20 Reactions</p>
+                       <div class="post-time">2 hrs</div>
+                   </div>
+                   <br>
+               </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+</div>
+
+<div class="organization">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg"
+             alt="default-2" itemprop="image" height="638px" width="100%" title="default-2" onerror="this.style.display='none'"/>
+        </div>
+        <div class="col-lg-6">
+            <br>
+            <br>
+            <div style="padding: 20px 30px">
+                <div class="services">The Teening Path Program</div>
+                <br>
+
+                <h2 class="title">
+                    Step into adolescence with your peers
+                </h2>
+                <br>
+
+                <p class="sub-title">Our group program offers support for their developmental
+                    stage, and strategies for dealing with increasingly complex
+                    social relationships. This transition is done together,
+                    with peer and family support. Parents get support in moving
+                    through this time with their children too!</p>
+                <a class="" href="#" target="_self" role="button" rel="noopener noreferrer">
+                    <u>Learn more</u> →
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="title-center">
+		        Helpful resources
+	        </h2>
+        </div>
+        <div class="col-lg-6" style="text-align: right">
+            <div class="button2">See more</div>
+        </div>
+    </div>
+    <div class="post-part">
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="forum-card">
+                    <br>
+                    <i class='fa fa-circle' style='font-size:42px'></i>
+
+                    <p class="card-text">Service listing or provider</p>
+                    <p class="forum-card-content">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="sub-title">City, State</p>
+                </div>
+                <br>
+            </div>
+            <br>
+
+            <div class="col-lg-6">
+                <div class="forum-card">
+                    <br>
+                    <i class='fa fa-circle' style='font-size:42px'></i>
+
+                    <p class="card-text">Service listing or provider</p>
+                    <p class="forum-card-content">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="sub-title">City, State</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="forum-card">
+                    <br>
+                    <i class='fa fa-circle' style='font-size:42px'></i>
+
+                    <p class="card-text">Service listing or provider</p>
+                    <p class="forum-card-content">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="sub-title">City, State</p>
+                </div>
+                <br>
+            </div>
+                <br>
+
+            <div class="col-lg-6">
+                <div class="forum-card">
+                    <br>
+                    <i class='fa fa-circle' style='font-size:42px'></i>
+
+                    <p class="card-text">Service listing or provider</p>
+                    <p class="forum-card-content">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="sub-title">City, State</p>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="title-center">
+		        Meet and connect with peers
+	        </h2>
+        </div>
+        <div class="col-lg-6" style="text-align: right">
+            <div class="button2">See more</div>
+        </div>
+    </div>
+    <div class="post-part">
+        <br>
+        <div class="row">
+            <div class="col-lg-4">
+                    <div class="forum-card">
+                        <div class="card-head">
+                            <a href="#" class="category">Grieving</a>
+                            <a href="#" class="category2">Support</a>
+                            <div style="float: right;">
+                                <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                                <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="card-text">Share circle for new community members</p>
+                        <p class="forum-card-content">May 16 @ 4pm EST - Online</p>
+                        <p class="event-people" style="color: #7c7c7c">6 people going</p>
+                        <p class="event-people">6 spots left</p>
+                    </div>
+                   <br>
+
+                </div>
+            <div class="col-lg-4">
+                    <div class="forum-card">
+                        <div class="card-head">
+                            <a href="#" class="category">Grieving</a>
+                            <a href="#" class="category2">Support</a>
+                            <div style="float: right;">
+                                <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                                <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="card-text">Share circle for new community members</p>
+                        <p class="forum-card-content">May 16 @ 4pm EST - Online</p>
+                        <p class="event-people" style="color: #7c7c7c">6 people going</p>
+                        <p class="event-people">6 spots left</p>
+                    </div>
+                   <br>
+
+                </div>
+            <div class="col-lg-4">
+                    <div class="forum-card">
+                        <div class="card-head">
+                            <a href="#" class="category">Grieving</a>
+                            <a href="#" class="category2">Support</a>
+                            <div style="float: right;">
+                                <a href="#"><i class="fa fa-bookmark-o"></i></a>
+                                <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="card-text">Share circle for new community members</p>
+                        <p class="forum-card-content">May 16 @ 4pm EST - Online</p>
+                        <p class="event-people" style="color: #7c7c7c">6 people going</p>
+                        <p class="event-people">6 spots left</p>
+                    </div>
+                   <br>
+
+                </div>
+        </div>
+        <br>
+    </div>
+</div>
+
+
+
+
+<!-- /wp:fl-builder/layout -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
