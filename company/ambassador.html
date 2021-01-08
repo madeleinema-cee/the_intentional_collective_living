@@ -13,12 +13,19 @@
         .site-content {
             width:100%;
         }
-        .main-content {
-            padding-left: 10%;
-            padding-right: 10%;
-            padding-top: 5%;
-            padding-bottom: 5%;
+
+        html {
+            scroll-behavior: smooth;
         }
+
+        .main-content {
+            padding: 5% 10%;
+        }
+
+        .main-content {
+            padding: 5% 10%;
+        }
+
         .title{
             font-family: Radley;
             font-size: xx-large;
@@ -91,7 +98,7 @@
         }
 
 
-        .-part{
+        .first-part{
             padding-bottom: 100px;
         }
 
@@ -168,7 +175,7 @@
         }
 
         .belief-title {
-            font-size: 35px;
+            font-size: xx-large;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;
@@ -184,28 +191,7 @@
             font-style: normal;
             line-height: 1.56;
             letter-spacing: 0.3px;
-            text-align: center;
             color: #000000;
-            margin: auto;
-            width: 60%;
-        }
-
-        .button2 {
-            font-size: 16px;
-            font-weight: 500;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.19;
-            letter-spacing: normal;
-            color: black;
-            border-radius: 35px;
-            border: solid 1px black;
-            padding: 13px;
-            display: inline-block;
-        }
-
-        .button2:hover {
-            opacity: 80%;
         }
 
         .category {
@@ -235,6 +221,19 @@
             margin-bottom: 20px;
         }
 
+        .sub-title {
+            font-family: HelveticaNeue,serif;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: normal;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
 
 
 </style>
@@ -251,7 +250,7 @@
 </script>
 
 <div class="container main-content">
-    <div class="row -part">
+    <div class="row first-part">
         <div class="col-lg-6 specialpaddingbottom">
             <div class="services">Company</div>
             <div class="dropdown show">
@@ -365,21 +364,22 @@
 
 <div class="award-content">
     <div class="container main-content">
+        <br>
+        <br>
         <h2 class="title-center center">What you can get from us</h2>
         <br>
         <br>
-        <div class="row first-part">
+        <div class="row">
             <div class="col-lg-6">
                 <div class="">
+                    <br>
                     <div class="belief-title">Satisfaction from serving</div>
                 </div>
                 <br>
 
-                <p class="sub-title">Putting your own knowledge and experience to use helping others facing similar
+                <p class="belief-content">Putting your own knowledge and experience to use helping others facing similar
                     challenges can be hugely satisfying and can also be an important part of your own healing experience.
                 </p>
-                <br>
-                <br>
                 <br>
 
             </div>
@@ -395,16 +395,16 @@
         <br>
         <br>
 
-
-        <div class="row first-part">
-            <div class="col-lg-6">
-                <div class="image">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <div class="image order-last ">
                     <img src="http://dev-the-ilc.org/wp-content/uploads/2020/10/default-2-scaled.jpg" alt="default-2"
                          itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="">
+            <div class="col-lg-6 ">
+                <div class="order-first">
+                    <br>
                     <div class="belief-title">Learning and growth opportunities</div>
                 </div>
                 <br>
@@ -414,8 +414,6 @@
                     the efforts of others in your area and develop valuable leadership skills.
                 </p>
                 <br>
-                <br>
-                <br>
 
             </div>
         </div>
@@ -423,7 +421,7 @@
         <br>
         <br>
 
-        <div class="row first-part">
+        <div class="row">
             <div class="col-lg-6">
                 <div class="">
                     <div class="belief-title">Knowledge, connections and resources</div>
@@ -435,9 +433,6 @@
                     we also offer our ambassadors a rich collection of resources and tools.
                 </p>
                 <br>
-                <br>
-                <br>
-
             </div>
 
             <div class="col-lg-6">
@@ -447,8 +442,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 
