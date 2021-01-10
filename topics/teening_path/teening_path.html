@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>explore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- wp:fl-builder/layout -->
+	<style>
+        .site-content {
+            width:100%;
+        }
+        .main-content {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 5%;
+
+        }
+        .title{
+            font-family: Radley;
+            font-size: xx-large;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .sub-title {
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.56;
+              letter-spacing: normal;
+              color: #000000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: #ffffff;
+            border-radius: 35px;
+            border: solid 1.5px #648c1a;
+            background-color: #648c1a;
+            padding: 13px;
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .button2 {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            color: black;
+            border-radius: 35px;
+            border: solid 1px #2c2c2c;
+            padding: 13px;
+            display: inline;
+            margin-right: 20px;
+
+        }
+
+        .button:hover {
+            color: white;
+            background-color: #648c1a;
+            opacity: 80%;
+            border: solid 1.5px #648c1a;
+        }
+
+
+        .link{
+            color: black;
+            font-size: 16px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.38;
+            display: inline;
+        }
+
+        a {
+            color:black
+        }
+        a:hover{
+            text-decoration: none;
+            color: black;
+            opacity: 80%;
+        }
+
+        .title-center {
+            padding-bottom: 50px;
+          font-family: Radley;
+          font-size: xx-large;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .card {
+          border-radius: 5px;
+          border: solid 0.5px #7c7c7c;
+          background-color: #faf8f5;
+            padding: 20px;
+        }
+
+        .category {
+            display: inline;
+            border-radius: 3px;
+            border: solid 1px #c6cfda;
+            background-color: #c6cfda;
+            font-size: 12px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            text-align: center;
+            float: left;
+            margin-right: 3px;
+            padding: 5px;
+        }
+
+        .category2 {
+            display: inline;
+            border-radius: 3px;
+            border: solid 1px #e0e6d5;
+            background-color: #e0e6d5;
+            font-size: 12px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #648c1a;
+            text-align: center;
+            float: left;
+            padding: 5px;
+        }
+
+        .card-text {
+            font-size: large;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .user_img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+
+        .user-info {
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        .number-title {
+            display: inline-block;
+          font-size: x-large;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.29;
+          letter-spacing: normal;
+          color: #000000;
+            padding-bottom: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+
+        .first-part{
+
+            padding-bottom: 100px;
+        }
+
+
+        .services{
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .btn-drop {
+            width: 276px;
+            border-radius: 5px;
+            border: solid 1px #f3eee6;
+            background-color: #f3eee6;
+            font-family: HelveticaNeue;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+
+
+        .loo {
+          padding: 20px;
+          border-radius: 8px;
+          background-color: #ffffff;
+        }
+
+        .Callan-Loo {
+            font-size: 25px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.28;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .Creative-compassion {
+            font-family: HelveticaNeue;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #7c7c7c;
+        }
+
+        .learnmore {
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+
+        .main-content2 {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 5%;
+
+        }
+
+        .specialpaddingtop {
+            padding-top: 20px;
+        }
+
+        .specialpaddingbottom {
+            padding-bottom: 20px;
+        }
+
+        .organization {
+            background-color: #e0e6d5;
+        }
+
+        .belief-title {
+            font-family: Radley;
+            font-size: xx-large;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.29;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+        .belief-content {
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: 0.3px;
+            color: #000000;
+        }
+
+        .price {
+            display: inline;
+            font-size: medium;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.22;
+            letter-spacing: normal;
+            color: #000000;
+        }
+
+</style>
+
+
+
+<div class="container main-content">
+    <div class="row">
+        <div class="col-lg-6 specialpaddingbottom">
+            <br>
+            <h1 class="title">
+                Leveling up into adolescence with grace &  style - and friends!
+            </h1>
+
+	        <p class="sub-title">A unique, small-group coming of age program to help pre-teens
+                and their families navigate the challenges of transitioning into adolescence.
+                The company of peers adds depth, meaning and connections to already-powerful
+                coming of age experiences.</p>
+            <a href="http://dev-the-ilc.org/teening-path-3mths/" class="button" target="_self" role="button" rel="noopener noreferrer">
+                    Register
+                </a>
+                <a class="" href="#second-part" target="_self" role="button" rel="noopener noreferrer">
+                    <u>Learn more about us</u> ↓
+                </a>
+
+            <br>
+            <br>
+        </div>
+        <div class="col-lg-6">
+            <div class="image">
+                <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                     itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>        </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="second-part" class="main-content2">
+    <div class="award-content">
+    <div class="container">
+        <br>
+
+        <br>
+
+        <div class="row first-part">
+            <div class="col-lg-6">
+                <div class="image">
+                    <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                         itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <br>
+                <div class="">
+                    <div class="belief-title">Reflect and release</div>
+                </div>
+                <br>
+
+                <p class="sub-title">Recognizing and appreciating what's being left behind as a child or adolescent
+                    is important for letting go of old roles and patterns and move on to what's next.
+                    We'll create a small-group cohort that will take this journey together
+                    and build initial bonds based on shared feelings of what they'll be giving up and what they'll be gaining.
+                </p>
+            </div>
+        </div>
+
+        <div class="row first-part">
+            <div class="col-lg-6">
+                <br>
+                <br>
+                <div class="">
+                    <div class="belief-title">Explore and prepare</div>
+                </div>
+                <br>
+
+                <p class="belief-content">Accepting uncertainty, exploring new possibilities,
+                    learning new skills, and creating healthy new relationships are all part
+                    of any good coming of age experience. Initiates will explore their changing
+                    identities and imagine who they want to be while uncovering their unique gifts,
+                    and parents or mentors will explore resources and insights that supplement your own knowledge and experiences.
+                </p>
+                <br>
+                <br>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="image">
+                    <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                         itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row first-part">
+            <div class="col-lg-6">
+                <div class="image">
+                    <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                         itemprop="image" height="426" width="572" title="default-2" onerror="this.style.display='none'"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <br>
+                <div class="">
+                    <div class="belief-title">Embrace and integrate</div>
+                </div>
+                <br>
+
+                <p class="sub-title">Defining and embracing a unique path forward for the initiate
+                    leads to recognition and celebration of their new role in their community.
+                    Initiates will grow and thrive by learning healthy ways to navigate social scenes,
+                    peer pressure, parental pressure, their changing bodies, strong emotions,
+                    responsibilities and stress. Parents and mentors will feel more freedom and
+                    confidence in their roles as guides. A coming of age ceremony involving
+                    extended community is a great way to bring closure to this phase of the journey!
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+
+
+<div class="organization">
+    <br>
+    <br>
+    <br>
+    <h2 class="title-center center">
+        Our programs
+    </h2>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="min-height: 25rem">
+                    <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                    itemprop="image" class="card-img-top mb-2" title="default-2" onerror="this.style.display='none'"/>
+                    <p class="card-text">3-Month Journey</p>
+                    <p><i class="fa fa-check-circle"></i> Introduction and forming a cohort</p>
+                    <p><i class="fa fa-check-circle"></i> Three learning sessions: Release; Explore; Integrate</p>
+                    <p><i class="fa fa-check-circle"></i> Closing community celebration</p>
+                    <div>
+                    <p class="price">$300</p>
+                    <div class="price" style="float: right">
+                    <a href="http://dev-the-ilc.org/teening-path-3mths/"><u>Learn more</u> →</a>
+                    </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="min-height: 25rem">
+                    <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                    itemprop="image" class="card-img-top mb-2" title="default-2" onerror="this.style.display='none'"/>
+                    <p class="card-text">6-Month Journey</p>
+                    <p><i class="fa fa-check-circle"></i> Everything included in the 3-month journey</p>
+                    <p><i class="fa fa-check-circle"></i> Core values inventory and development</p>
+                    <div>
+                    <p class="price">$600</p>
+                    <div class="price" style="float: right">
+                    <a href="http://dev-the-ilc.org/teening-path-6mths/"><u>Learn more</u> →</a>
+                    </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-lg-4">
+                <div class="card" style="min-height: 25rem">
+                    <img src="http://dev-the-ilc.org/wp-content/uploads/2020/12/mainpagegraphic_12420.jpg" alt="default-2"
+                    itemprop="image" class="card-img-top mb-2" title="default-2" onerror="this.style.display='none'"/>
+                    <p class="card-text">Personalized 6-Month Journey</p>
+                    <p><i class="fa fa-check-circle"></i> Everything included in the 3-month journey</p>
+                    <p><i class="fa fa-check-circle"></i> Three additional learning sessions, including working with mentors</p>
+                    <p><i class="fa fa-check-circle"></i> Core values inventory and development</p>
+                    <div>
+                    <p class="price">$600</p>
+                    <div class="price" style="float: right">
+                    <a href="http://dev-the-ilc.org/teening-path-6mths-custom/"><u>Learn more</u> →</a>
+                    </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container main-content">
+    <div class="row -part">
+        <div class="col-lg-6">
+            <h1 class="title specialpaddingtop specialpaddingbottom">
+                Meet our Teening Path team
+            </h1>
+        </div>
+        <div class="col-lg-6 specialpaddingtop specialpaddingbottom">
+            <p class="sub-title">A celebrant is someone that has been empowered and
+                trained to create and deliver ceremonies to mark big life changes.
+                Our celebrants are legally empowered and have been trained to
+                create powerful ceremonies that deliver depth and meaning
+                for the individual, their families, and their communities.</p>
+
+        </div>
+    </div>
+    <div class="row -part">
+        <div class="col-lg-6 specialpaddingtop">
+            <div class="loo">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="http://dev-the-ilc.org/wp-content/uploads/2021/01/CAL-headshot-RPA-2018.png" alt="default-2"
+                     itemprop="image" height="184px" width="200px" title="default-2" onerror="this.style.display='none'"/><br><br>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="Callan-Loo">Callan Loo</div><br>
+                        <div class="Creative-compassion">Creative, compassionate and experienced. Cal is a certified
+                            celebrant, using his ordination to deliver life-changing ceremony.</div><br>
+                        <a class="learnmore" href="#"><u>Learn more</u> →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-6 specialpaddingtop">
+            <div class="loo">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <img src="http://dev-the-ilc.org/wp-content/uploads/2021/01/Mara-Evans-0003cropped.jpg" alt="default-2"
+                     itemprop="image" height="184px" width="200px" title="default-2" onerror="this.style.display='none'"/><br><br>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="Callan-Loo">Mara Evenstar</div><br>
+                        <div class="Creative-compassion">Mara delivers beautiful, meaningful and powerful
+                            ceremonies that add depth and meaning to all of life's big transitions.</div><br>
+                        <a class="learnmore" href="#"><u>Learn more</u> →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- /wp:fl-builder/layout -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
