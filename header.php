@@ -354,11 +354,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
       </li>
         <li class="nav-item">
-        <div class="btn btn-outline-secondary login-btn">Login</div>
+        <div class="btn btn-outline-secondary login-btn"><a href="http://dev-the-ilc.org/login/">Login</a></div>
       </li>
         <br>
         <li class="nav-item">
-            <div class="btn btn-outline-secondary sign-btn">Sign up</div>
+            <div class="btn btn-outline-secondary sign-btn"><a href="http://dev-the-ilc.org/register/">Sign up</a></div>
       </li>
     </ul>
   </div>
