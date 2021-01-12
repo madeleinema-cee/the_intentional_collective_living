@@ -196,16 +196,16 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="section">
-                                    <div class="categories"><i class="fa fa-circle"></i>-hand Stories</div>
+                                    <a href="http://dev-the-ilc.org/first_hand_stories/" class="categories"><i class="fa fa-circle"></i>First-hand Stories</a>
                                     <p class="content">Find inspiration through stories from people that rose from the ashes of challenges like yours</p>
                                 </div>
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Events and activities</div>
+                                <a href="http://dev-the-ilc.org/events/" class="section"><div class="categories"><i class="fa fa-circle"></i>Events and activities</a>
                                     <p class="content">Connect in real or virtual space with people that "get" you because they've been there too</p></div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Community forum</div>
+                                <a href="http://dev-the-ilc.org/community_forum_all/" class="section"><div class="categories"><i class="fa fa-circle"></i>Community forum</a>
                                     <p class="content">A safe space to connect, share experiences, feel heard, and ask for or offer help</p></div>
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Resources portal</div>
+                                <a href="http://dev-the-ilc.org/resources-portal/" class="section"><div class="categories"><i class="fa fa-circle"></i>Resources portal</a>
                                     <p class="content">Find and connect with people and organizations to serve and be served</p></div>
                             </div>
                         </div>
@@ -215,13 +215,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <div class="grey-title">Programs and services</div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Personal guidance</div>
+                                <a href=" http://dev-the-ilc.org/personal-guidance/" class="section"><div class="categories"><i class="fa fa-circle"></i>Personal guidance</a>
                                     <p class="content">Connect with someone for guidance and support that has been there and wants to help</p></div>
                                 <a href="http://dev-the-ilc.org/rising-phoenix-awards/" class="section"><div class="categories"><i class="fa fa-circle"></i>Rising Phoenix Awards</a>
                                     <p class="content">Recognize and celebrate everyday, inspirational people from your community</p></div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Community forum</div>
+                                <div class="section"><a href="http://dev-the-ilc.org/community_forum_all/" class="categories"><i class="fa fa-circle"></i>Community forum</a>
                                     <p class="content">Embrace and celebrate major life transitions with real intention</p></div>
                                 <div><a class="link" href="http://dev-the-ilc.org/coming-of-age-ceremony/">Coming of age</a> →</div>
                                 <div><a class="link" href="http://dev-the-ilc.org/weddings-and-unions-ceremony/">Weddings & unions</a> →</div>
@@ -247,17 +247,17 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="section">
-                                    <div class="categories"><i class="fa fa-circle"></i>Abuse</div>
+                                    <div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/abuse/">Abuse</a></div>
                                     <p class="content">Resources to help survivors of abuse and domestic violence heal and thrive</p>
                                 </div>
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Grieving</div>
+                                <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/grieving/">Grieving</a></div>
                                     <p class="content">Resources to help you grieve and recover from significant loss. You are not alone</p></div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Addiction</div>
+                                <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/addiction/">Addiction</a></div>
                                     <p class="content">Resources to help people in recovery heal, grow, and get their lives back</p>
                                 </div>
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Parenthood</div>
+                                <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/parenthood/">Parenthood</a></div>
                                     <p class="content">Resources to help you deal with the many big challenges that come with being a parent</p>
                                 </div>
                             </div>
@@ -267,13 +267,13 @@ if ( ! defined( 'ABSPATH' ) ) {
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Divorce or uncoupling</div>
+                                <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/divorce_or_uncoupling/">Divorce or uncoupling</a></div>
                                     <p class="content">Resources to help you get through and heal from challenging relationship endings</p></div>
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Military life transitions</div>
+                                <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/military_life_transitions/">Military life transitions</a></div>
                                     <p class="content">Help for families facing the challenging life transitions that come with being in the military</p></div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="section"><div class="categories"><i class="fa fa-circle"></i>Health crisis</div>
+                                <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/health_crisis/">Health crisis</a></div>
                                     <p class="content">Navigate through and recover from a major health crisis that’s affected you or your loved ones</p>
                                 </div>
                                 <div class="mt-5"><a class="link" href="http://dev-the-ilc.org/topics/">View all</a> →</div>
@@ -299,12 +299,12 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="section">
-                            <div class="categories"><i class="fa fa-circle"></i>Resources portal</div>
+                            <div class="categories"><i class="fa fa-circle"></i><a href="http://dev-the-ilc.org/resources-portal/"> Resources portal</a></div>
                             <p class="content">Easily find and connect with people or organizations that either need your help or can collaborate with you to scale your impact</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="section"><div class="categories"><i class="fa fa-circle"></i>Memberships for organizations</div>
+                        <div class="section"><div class="categories"><i class="fa fa-circle"></i><a href=""> Memberships for organizations</a></div>
                             <p class="content">Member organizations get enhanced visibility and access to the resources available through our resources portal and community</p>
                         </div>
                     </div>
