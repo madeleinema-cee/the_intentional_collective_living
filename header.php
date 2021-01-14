@@ -358,7 +358,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </li>
         <br>
         <li class="nav-item">
-            <div class="btn btn-outline-secondary sign-btn"><a href="http://dev-the-ilc.org/register/">Sign up</a></div>
+            <div class="btn btn-outline-secondary sign-btn"><a href="http://dev-the-ilc.org/signup_categories/">Sign up</a></div>
       </li>
     </ul>
   </div>
