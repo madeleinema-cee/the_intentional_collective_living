@@ -205,7 +205,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                             <div class="col-lg-6">
                                 <a href="http://dev-the-ilc.org/community_forum_all/" class="section"><div class="categories"><i class="fa fa-circle"></i>Community forum</a>
                                     <p class="content">A safe space to connect, share experiences, feel heard, and ask for or offer help</p></div>
-                                <a href="http://dev-the-ilc.org/resources-portal/" class="section"><div class="categories"><i class="fa fa-circle"></i>Resources portal</a>
+                                <a href="http://www.theintentionallivingcollective.org/life-transition-zone---traditional-view.html" class="section"><div class="categories"><i class="fa fa-circle"></i>Resources portal</a>
                                     <p class="content">Find and connect with people and organizations to serve and be served</p></div>
                             </div>
                         </div>
